@@ -48,6 +48,12 @@ describe "show the depths of rspec" do
       #check to see whether an error is raised if you pass too many arguments to a method
     end
 
+    it 'should match a given expression' do
+      a ="Hello, Tina"
+
+      expect(a).to include("Tina")
+    end
+
   end
 
 end
